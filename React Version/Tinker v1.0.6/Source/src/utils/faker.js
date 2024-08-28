@@ -53,7 +53,7 @@ const fakers = {
       photos[photos.length] =
         imageAssets[
           "/src/assets/images/profile-" + _.random(1, 15) + ".jpg"
-        ].default;
+        ]?.default;
     }
     return _.sampleSize(photos, 10);
   },
@@ -270,79 +270,79 @@ const fakers = {
     const foods = [
       {
         name: "Vanilla Latte",
-        image: imageAssets["/src/assets/images/food-beverage-1.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-1.jpg"]?.default,
       },
       {
         name: "Milkshake",
-        image: imageAssets["/src/assets/images/food-beverage-2.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-2.jpg"]?.default,
       },
       {
         name: "Soft Drink",
-        image: imageAssets["/src/assets/images/food-beverage-3.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-3.jpg"]?.default,
       },
       {
         name: "Root Beer",
-        image: imageAssets["/src/assets/images/food-beverage-4.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-4.jpg"]?.default,
       },
       {
         name: "Pocari",
-        image: imageAssets["/src/assets/images/food-beverage-5.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-5.jpg"]?.default,
       },
       {
         name: "Ultimate Burger",
-        image: imageAssets["/src/assets/images/food-beverage-6.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-6.jpg"]?.default,
       },
       {
         name: "Hotdog",
-        image: imageAssets["/src/assets/images/food-beverage-7.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-7.jpg"]?.default,
       },
       {
         name: "Avocado Burger",
-        image: imageAssets["/src/assets/images/food-beverage-8.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-8.jpg"]?.default,
       },
       {
         name: "Spaghetti Fettucine Aglio with Beef Bacon",
-        image: imageAssets["/src/assets/images/food-beverage-9.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-9.jpg"]?.default,
       },
       {
         name: "Spaghetti Fettucine Aglio with Smoked Salmon",
-        image: imageAssets["/src/assets/images/food-beverage-10.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-10.jpg"]?.default,
       },
       {
         name: "Curry Penne and Cheese",
-        image: imageAssets["/src/assets/images/food-beverage-11.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-11.jpg"]?.default,
       },
       {
         name: "French Fries",
-        image: imageAssets["/src/assets/images/food-beverage-12.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-12.jpg"]?.default,
       },
       {
         name: "Virginia Cheese Fries",
-        image: imageAssets["/src/assets/images/food-beverage-13.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-13.jpg"]?.default,
       },
       {
         name: "Virginia Cheese Wedges",
-        image: imageAssets["/src/assets/images/food-beverage-14.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-14.jpg"]?.default,
       },
       {
         name: "Fried/Grilled Banana",
-        image: imageAssets["/src/assets/images/food-beverage-15.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-15.jpg"]?.default,
       },
       {
         name: "Crispy Mushroom",
-        image: imageAssets["/src/assets/images/food-beverage-16.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-16.jpg"]?.default,
       },
       {
         name: "Fried Calamari",
-        image: imageAssets["/src/assets/images/food-beverage-17.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-17.jpg"]?.default,
       },
       {
         name: "Chicken Wings",
-        image: imageAssets["/src/assets/images/food-beverage-18.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-18.jpg"]?.default,
       },
       {
         name: "Snack Platter",
-        image: imageAssets["/src/assets/images/food-beverage-19.jpg"].default,
+        image: imageAssets["/src/assets/images/food-beverage-19.jpg"]?.default,
       },
     ];
     return _.shuffle(foods);

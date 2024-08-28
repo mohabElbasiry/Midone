@@ -598,8 +598,8 @@ function Main(props) {
           position: point,
           icon: {
             url: !darkMode
-              ? imageAssets["/src/assets/images/map-marker.svg"].default
-              : imageAssets["/src/assets/images/map-marker-dark.svg"].default,
+              ? imageAssets["/src/assets/images/map-marker.svg"]?.default
+              : imageAssets["/src/assets/images/map-marker-dark.svg"]?.default,
           },
         });
 
@@ -627,9 +627,8 @@ function Main(props) {
             height: 55,
             textColor: "white",
             url: !darkMode
-              ? imageAssets["/src/assets/images/map-marker-region.svg"].default
-              : imageAssets["/src/assets/images/map-marker-region-dark.svg"]
-                  .default,
+              ? imageAssets["/src/assets/images/map-marker-region.svg"]?.default
+              : imageAssets["/src/assets/images/map-marker-region-dark.svg"]?.default,
             anchor: [0, 0],
             anchorText: [17, 0],
             fontWeight: "bold",
